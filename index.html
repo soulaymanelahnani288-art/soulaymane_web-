@@ -1,69 +1,159 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
-    <title>موقعي الإلكتروني</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soulaymane Web</title>
+
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background: #f2f2f2;
+            margin: 0;
+            min-height: 100vh;
             font-family: Arial, sans-serif;
+
+            /* خلفية راية المغرب */
+            background-color: #c1272d;
+            overflow-x: hidden;
+        }
+
+        /* النجمة الخضراء ديال راية المغرب */
+        body::before {
+            content: "★";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #006233;
+            font-size: 380px;
+            opacity: 0.25;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .page {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px 15px;
             text-align: center;
-            padding-top: 100px;
         }
 
         h1 {
-            font-size: 35px;
+            color: #ffd700;
+            font-size: 38px;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 5px black;
         }
 
-        p {
+        .contact {
+            color: #ffd700;
             font-size: 24px;
+            margin-bottom: 35px;
+            text-shadow: 2px 2px 4px black;
         }
+
+        .phone {
+            color: #ffd700;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 8px;
+        }
+
+        .phone:hover {
+            color: white;
+        }
+
+        /* زر الخدمات */
+        .services-button {
+            display: inline-block;
+
+            background: rgba(0, 0, 0, 0.75);
+            border: 3px solid #ffd700;
+
+            color: #ffd700;
+            text-decoration: none;
+
+            padding: 18px 35px;
+            border-radius: 15px;
+
+            font-size: 25px;
+            font-weight: bold;
+
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+
+            transition: 0.3s;
+        }
+
+        .services-button:hover {
+            transform: scale(1.05);
+            background: #ffd700;
+            color: black;
+        }
+
+        .important {
+            color: red;
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .contact {
+                font-size: 19px;
+            }
+
+            .services-button {
+                font-size: 20px;
+                padding: 15px 25px;
+            }
+
+            body::before {
+                font-size: 230px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
 
-    <h1>السلام عليكم أنا إسمي سليمان وأصنع المواقع الإلكترونية</h1>
+    <div class="page">
 
-    <p>لي مهتم يتواصل معي برقم هاتفي</p>
+        <h1>
+            السلام عليكم أنا سليمان وأصنع المواقع الإلكترونية بثمن مناسب
+        </h1>
 
-<img src="WhatsApp Image 2026-09-24 at 01.20.35.jpeg" width="300"></body>
+        <div class="contact">
+            إن كنت مهتم تواصل معي عبر واتساب
+
+            <a class="phone"
+               href="https://wa.me/212787277797"
+               target="_blank">
+                0787277797
+            </a>
+        </div>
+
+        <a class="services-button" href="services.html">
+            الخدمات المتاحة
+            <span class="important">"هام"</span>
+        </a>
+
+    </div>
+
+</body>
 </html>
-<p>لي مهتم يتواصل معي عبر واتساب:</p>
-
-<a href="https://wa.me/212787277797" target="_blank"
-   style="
-   display:inline-block;
-   background:#25D366;
-   color:white;
-   padding:15px 25px;
-   text-decoration:none;
-   border-radius:10px;
-   font-size:22px;
-   font-weight:bold;
-   ">
-   💬 تواصل معي عبر WhatsApp
-</a>
-<p>لي مهتم يتواصل معي عبر واتساب:</p>
-
-<a href="https://wa.me/212787277797" target="_blank"
-   
-style="
-    body {
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    color: white;
-    font-family: Arial, sans-serif;
-}
-   display:inline-block;
-   background:#25D366;
-   color:white;
-   padding:15px 25px;
-   text-decoration:none;
-   border-radius:10px;
-   font-size:22px;
-   font-weight:bold;
-   ">
-   💬 تواصل معي عبر WhatsApp
-</a>
-<title>Soulaymane Web</title>
-<title>Soulaymane Web</title>
